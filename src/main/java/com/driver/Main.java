@@ -1,15 +1,16 @@
 package com.driver;
 
 public class Main {
- public  static void main (String []args){
+    public static void main(String[] args)
+    {
+        RWOnly rwOnly = new RWOnly();
 
-    RWOnly rwonly = new RWOnly();
+        // try setting a value to name by directly accessing it using obj and also try to print it
+        // rw.Only.name = "Kunal";
+        // 'name' has private access in 'com.driver.RWOnly'
 
-    //    rwonly.name = "Rahul";
-    //    System.out.println(rwonly.name);
-    // java: id has private access in com.driver.RWOnly
+        rwOnly.setName("Kunal");
+        System.out.println(rwOnly.getName());
 
-       rwonly.setName("Rahull");
-       rwonly.getName();
- 
+    }
 }
