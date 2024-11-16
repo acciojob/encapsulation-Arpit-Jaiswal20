@@ -5,12 +5,11 @@ public class Main {
 
     RWOnly rwonly = new RWOnly();
 
-    //    rwonly.id = 100;
-    //    System.out.println(rwonly.id);
-
+    //    rwonly.name = "Rahul";
+    //    System.out.println(rwonly.name);
     // java: id has private access in com.driver.RWOnly
 
-        rwonly.setId(100);
-        System.out.println(rwonly.getId());
+       rwonly.setName("Rahull");
+       rwonly.getName();
  
 }
